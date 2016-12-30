@@ -80,7 +80,10 @@ class TestController extends Controller
     {
         echo  date('YmdHis') .  rand(100000,999999);
         var_dump(ArrayHelper::map(RefApp::find()->all(), 'id', 'appname'))  ;
-
+    }
+    public function actionT2()
+    {
+        echo 45;
     }
     /**
      * Logs in a user.
