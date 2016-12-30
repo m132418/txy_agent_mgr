@@ -78,9 +78,7 @@ class TestController extends Controller
     }
     public function actionT1()
     {
-
         echo  date('YmdHis') .  rand(100000,999999);
-//        echo  date('Ymd') . str_pad(mt_rand(1, 99999), 5, '0', STR_PAD_LEFT);
         var_dump(ArrayHelper::map(RefApp::find()->all(), 'id', 'appname'))  ;
 
     }
